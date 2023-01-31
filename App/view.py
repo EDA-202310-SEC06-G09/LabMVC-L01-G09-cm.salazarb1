@@ -51,7 +51,7 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    # TODO: Mods Lab 1, agregar la opcion 3.
+    print("3- Book tags")
 
     print("0- Salir")
 
@@ -109,7 +109,8 @@ if __name__ == "__main__":
 
         # TODO: Mods Lab 1, agregar la funcion opt 3 -> ladBookTags().
         elif int(inputs[0]) == 3:
-            pass
+            print("cargando información de Book tags...")
+            
 
         elif int(inputs[0]) == 0:
             working = False
