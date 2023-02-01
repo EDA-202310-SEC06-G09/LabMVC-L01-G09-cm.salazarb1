@@ -51,8 +51,8 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    print("3- Book tags")
-
+    # TODO: Modslab 1, agregar opcion 3
+    print("3- Cargar Libros con Tags")
     print("0- Salir")
 
 
@@ -78,9 +78,9 @@ def loadBooksTags(control):
     """
     Cargar los Tags de libros
     """
-    booksTags = controller.loadBooksTags(control,
+    books_tags = controller.loadBooksTags(control,
                                          "GoodReads/book_tags-small.csv")
-    return booksTags
+    return books_tags
 
 
 # Se crea el controlador asociado a la vista
@@ -110,8 +110,8 @@ if __name__ == "__main__":
         # TODO: Mods Lab 1, agregar la función opt 3 -> ladBookTags().
         elif int(inputs[0]) == 3:
             print("cargando información de Book tags...")
-            booksTags = loadBooksTags(control)
-            print("Total de BooksTags cargados: " + str(booksTags))
+            book_tags = loadBooksTags(control)
+            print("Total de BooksTags cargados: " + str(book_tags))
 
         elif int(inputs[0]) == 0:
             working = False
