@@ -106,11 +106,12 @@ if __name__ == "__main__":
             print("Cargando información de tags....")
             tags = loadTags(control)
             print("Total de tags cargados: " + str(tags) + "\n")
-
-        # TODO: Mods Lab 1, agregar la funcion opt 3 -> ladBookTags().
+        
+        # TODO: Mods Lab 1, agregar la función opt 3 -> ladBookTags().
         elif int(inputs[0]) == 3:
             print("cargando información de Book tags...")
-            
+            booksTags = loadBooksTags(control)
+            print("Total de BooksTags cargados: " + str(booksTags))
 
         elif int(inputs[0]) == 0:
             working = False
@@ -119,3 +120,4 @@ if __name__ == "__main__":
         else:
             print("Opcion erronea, vuelva a elegir.\n")
     sys.exit(0)
+
